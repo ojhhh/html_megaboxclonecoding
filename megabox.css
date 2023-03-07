@@ -1,0 +1,616 @@
+* {
+  box-sizing: border-box;
+}
+.main {
+  width: 1100px;
+  height: 1240px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.main h1 {
+  padding-left: 10px;
+}
+
+.tab {
+
+}
+.tabrap {
+  width: 1100px;
+  height: 50px;
+}
+.tabrap input {
+  display: none;
+}
+
+.tabrap > input + label {
+  position: relative;
+  float: left;
+  width: 220px;
+  height: 50px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-bottom: 1px solid #503396;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+
+.test1 {
+  width: 100px;
+  height: 100px;
+  background-color: black;
+  display: none;
+}
+
+
+.tabrap > input:checked + label {
+  border-top: 1px solid #503396;
+  border-right: 1px solid #503396;
+  border-left: 1px solid #503396;
+  border-bottom: none;
+}
+
+input[class="tabtab1"]:checked ~ .poster {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+input[class="tabtab2"]:checked ~ .poster2 {
+  display: flex;
+  flex-wrap: wrap;
+}
+input[class="tabtab3"]:checked ~ .poster3 {
+  display: flex;
+  flex-wrap: wrap;
+}
+input[class="tabtab4"]:checked ~ .poster4 {
+  display: flex;
+  flex-wrap: wrap;
+}
+input[class="tabtab5"]:checked ~ .poster5 {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+/* ----------------------------------------------  */
+
+.inputtab {
+  width: 1100px;
+  height: 36px;
+  margin-top: 40px;
+  margin-bottom: 15px;
+  display: inline-block;
+}
+
+.inputtab .inputbox {
+  position: relative;
+  width: 230px;
+  height: 34px;
+  margin: 0;
+  border: 1px solid #d8d9db;
+  border-radius: 3px;
+  float: right;
+}
+
+.inputtab .inputbox input {
+  width: 197px;
+  height: 32px;
+  box-sizing: border-box;
+  border: none;
+}
+
+.inputbox::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 200px;
+  background-image: url("https://img.megabox.co.kr/static/pc/images/common/btn/btn-search-input.png");
+  width: 30px;
+  height: 32px;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+}
+
+
+.posterrap {
+  width: 1100px;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+.poster {
+  width: 1100px;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  display: none;
+}
+
+.poster2 {
+  display: none;
+}
+
+.poster3 {
+  display: none;
+}
+
+.poster4 {
+  display: none;
+}
+
+.poster5 {
+  display: none;
+}
+
+
+.poster .rap {
+  width: 230px;
+  height: 450px;
+  /* border: 1px solid; */
+  margin: 0 60px 60px 0;
+}
+
+.poster .rap:nth-child(4n) {
+  margin-right: 0;
+}
+
+/* poster img */
+.poster .rap .post {
+  position: relative;
+  width: 230px;
+  height: 331px;
+  background-image: url("https://img.megabox.co.kr/SharedImg/2023/02/06/7gFJhWRalgHSihiVTu9oOoKRXxMH5mKe_420.jpg");
+  background-size: cover;
+}
+
+.poster .rap .post2 {
+  background-image: url("https://img.megabox.co.kr/SharedImg/2022/12/19/whzCk46ejtIoWU1eavvF9lJ8rC2Wbvf7_420.jpg");
+}
+
+.poster .rap .post3 {
+  background-image: url("https://img.megabox.co.kr/SharedImg/2023/02/28/iveXQFGytM222BMdayVvR3GB7PbPR1ts_420.jpg");
+}
+.poster .rap .post4 {
+  background-image: url("https://img.megabox.co.kr/SharedImg/2023/02/15/IpTaEfgzehL3kJd6JEhxRLCpQz0TKIjl_420.jpg");
+}
+.poster .rap .post5 {
+  background-image: url("https://img.megabox.co.kr/SharedImg/2023/03/02/75Ix2G0OqnRlPeFnJGwsFIpTSZK2vXaK_420.jpg");
+}
+.poster .rap .post6 {
+  background-image: url("https://img.megabox.co.kr/SharedImg/2023/02/20/EQoaQIsVW7Ygf1ZKkoAUG0Eppbdumyg5_420.jpg");
+}
+.poster .rap .post7 {
+  background-image: url("https://img.megabox.co.kr/SharedImg/2023/02/02/UmgxlJgwWqM6ueiP32rhQhr2Cpq2GA5P_420.jpg");
+}
+.poster .rap .post8 {
+  background-image: url("https://img.megabox.co.kr/SharedImg/2023/02/28/EbmyhBe0qF97CySaA1RHQE77oTY9iXnS_420.jpg");
+}
+
+/* poster2 img */
+.poster2 .rap .post1 {
+  background-image: url("https://img.megabox.co.kr/SharedImg/2023/02/15/eKTfDUGc68zMcdBleYw4g1NNFk1TMUyR_420.jpg");
+}
+.poster2 .rap .post2 {
+  background-image: url("https://img.megabox.co.kr/SharedImg/2023/02/06/7gFJhWRalgHSihiVTu9oOoKRXxMH5mKe_420.jpg");
+}
+.poster2 .rap .post3 {
+  background-image: url("https://img.megabox.co.kr/SharedImg/2023/02/15/IpTaEfgzehL3kJd6JEhxRLCpQz0TKIjl_420.jpg");
+}
+.poster2 .rap .post4 {
+  background-image: url("https://img.megabox.co.kr/SharedImg/2023/02/17/4CmBMFC2U4oD60XpjGAbEJDYWr8SvW6a_420.jpg");
+}
+.poster2 .rap .post5 {
+  background-image: url("https://img.megabox.co.kr/SharedImg/2023/02/17/La9DHwipgFfHeArL1GiY5mzcahpJCWVn_420.jpg");
+}
+.poster2 .rap .post6 {
+  background-image: url("https://img.megabox.co.kr/SharedImg/2023/02/27/fFP6ITneNWf3BvqsqovlxjKVyZJ1zFS7_420.jpg");
+}
+.poster2 .rap .post7 {
+  background-image: url("https://img.megabox.co.kr/SharedImg/2023/02/13/YGKG6MapYCzMpJCbTg6CBVRYvnKyo81f_420.jpg");
+}
+.poster2 .rap .post8 {
+  background-image: url("https://img.megabox.co.kr/SharedImg/asis/system/mop/poster/2019/55/66AEF2-4199-4C3A-93BF-3130FF6ED86D.large.jpg");
+}
+
+/* poster3 post */
+.poster3 .rap .post1 {
+  background-image: url("https://img.megabox.co.kr/SharedImg/2023/02/07/NLUFEXoXr1YZtcgZ2YhVnhc4CYDvRvVm_420.jpg");
+}
+.poster3 .rap .post2 {
+  background-image: url("https://img.megabox.co.kr/SharedImg/2023/02/07/uSfaSL4ux0vi8fhPj8Cw1XRQ7yLqexfd_420.jpg");
+}
+.poster3 .rap .post3 {
+  background-image: url("https://img.megabox.co.kr/SharedImg/2023/01/30/CqrUfjU30vyD3fAsIlebHvONboFXrupp_420.jpg");
+}
+.poster3 .rap .post4 {
+  background-image: url("https://img.megabox.co.kr/SharedImg/2023/02/27/E8qRSNFl9CW5d86dhVJmKoKHuLlxmbxU_420.jpg");
+}
+.poster3 .rap .post5 {
+  background-image: url("https://img.megabox.co.kr/SharedImg/2022/12/27/ONy3YZv9kb4iTOgxL5QHDBkAytXEDoXk_420.jpg");
+}
+.poster3 .rap .post6 {
+  background-image: url("https://img.megabox.co.kr/SharedImg/2023/01/30/H5uo2pMGHxg6BzTQTurzZRTkwlnw52eU_420.jpg");
+}
+.poster3 .rap .post7 {
+  background-image: url("https://img.megabox.co.kr/SharedImg/2023/01/30/0W50gDPcyZ3pnY72JfT1hMvuNsnHzxnc_420.jpg");
+}
+.poster3 .rap .post8 {
+  background-image: url("https://img.megabox.co.kr/SharedImg/2023/01/30/obk7ptjerbQtxVejxe8SqjPvuESab06q_420.jpg");
+}
+
+/* poster4 post */
+.poster4 .rap .post1 {
+  background-image: url("https://img.megabox.co.kr/SharedImg/2023/02/17/4tlUtZ2rAYiYbXnBF4fClRTM5er0GIxP_420.jpg");
+}
+.poster4 .rap .post2 {
+  background-image: url("https://img.megabox.co.kr/SharedImg/2023/03/02/RyVhtmW6ro5wftIY5aOSVqf9m6uGdCbi_420.jpg");
+}
+.poster4 .rap .post3 {
+  background-image: url("https://img.megabox.co.kr/SharedImg/2023/02/17/4CmBMFC2U4oD60XpjGAbEJDYWr8SvW6a_420.jpg");
+}
+.poster4 .rap .post4 {
+  background-image: url("https://img.megabox.co.kr/SharedImg/2023/01/30/rI6oF8r8Dy93x4f1Q9IOekZXFvJ02gwL_420.jpg");
+}
+.poster4 .rap .post5 {
+  background-image: url("https://img.megabox.co.kr/SharedImg/2023/02/02/M2u6jNAAz96xptBsFnk1x3azxuMP0GHt_420.jpg");
+}
+.poster4 .rap .post6 {
+  background-image: url("https://img.megabox.co.kr/SharedImg/2023/02/22/wpOk6OxEJsJwqMUAqQYmrnYWtHaBjyu7_420.jpg");
+}
+.poster4 .rap .post7 {
+  background-image: url("https://img.megabox.co.kr/SharedImg/2023/02/13/YGKG6MapYCzMpJCbTg6CBVRYvnKyo81f_420.jpg");
+}
+.poster4 .rap .post8 {
+  background-image: url("https://img.megabox.co.kr/SharedImg/2023/01/26/Szq8Jau5KmzoKpZS1553dKmvAAP5gFzN_420.jpg");
+}
+
+/* poster5 post */
+.poster5 .rap .post1 {
+  background-image: url("https://img.megabox.co.kr/SharedImg/2023/02/15/eKTfDUGc68zMcdBleYw4g1NNFk1TMUyR_420.jpg");
+}
+.poster5 .rap .post2 {
+  background-image: url("https://img.megabox.co.kr/SharedImg/2023/02/23/AXHE8dDxknKay9JdswCkPEqYDvkVE3Vn_420.jpg");
+}
+.poster5 .rap .post3 {
+  background-image: url("https://img.megabox.co.kr/SharedImg/2022/12/28/6axAuOaqs6C9kE60Hj6SvvEqIM4jDxEO_420.jpg");
+}
+.poster5 .rap .post4 {
+  background-image: url("https://img.megabox.co.kr/SharedImg/2023/02/23/Dbga4jgfqlBuFLZ5qzDbqJ3nNK1YX9Iy_420.jpg");
+}
+.poster5 .rap .post5 {
+  background-image: url("https://img.megabox.co.kr/SharedImg/2023/02/23/Dbga4jgfqlBuFLZ5qzDbqJ3nNK1YX9Iy_420.jpg");
+}
+.poster5 .rap .post6 {
+  background-image: url("https://img.megabox.co.kr/SharedImg/2023/02/15/YjTEJq7BuEbBYModejYfCAZ2kmiW7rXQ_420.jpg");
+}
+.poster5 .rap .post7 {
+  background-image: url("https://img.megabox.co.kr/SharedImg/2023/03/06/YlZfROCna8xoaXYCrfLYyOahV0yD2m5o_420.jpg");
+}
+.poster5 .rap .post8 {
+  background-image: url("https://img.megabox.co.kr/SharedImg/2023/03/06/WDKkUI9kKhOBI8DJydYPvXYjyMWzYInH_420.jpg");
+}
+
+.poster .rap .post .postbtm {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  right: 12px;
+  bottom: 12px;
+  background-image: url("https://img.megabox.co.kr/static/pc/images/movie/bg-curation-classic.png");
+  background-repeat: no-repeat;
+}
+
+.poster .rap .post .post_cover {
+  transition: ease 0.5s;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 230px;
+  height: 331px;
+  opacity: 0;
+  background-color: black;
+  
+}
+
+.poster .rap .post .post_cover p:first-child {
+  letter-spacing: 0;
+  height: 152px;
+  overflow: hidden;
+  font-size: 16px;
+}
+
+.poster .rap .post .post_cover .score {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 200px;
+  height: 60px;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  margin-left: 15px;
+  display: flex;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+}
+
+.poster .rap .post .post_cover .score span {
+  color: white;
+  margin: 0 15px 0 0;
+  letter-spacing: 0;
+}
+.poster .rap .post .post_cover .score p {
+  font-size: 32px;
+  color: #59bec9;
+  letter-spacing: 0;
+}
+
+
+.poster .rap .post .post_cover:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.poster .rap .post p {
+  font-size: 40px;
+  font-weight: 300;
+  font-style: italic;
+  color: white;
+  margin: 8px;
+}
+
+.poster .rap .post .post_box {
+  width: 100%;
+  height: 45px;
+  /* border: 1px solid; */
+  display: flex;
+}
+
+.poster .rap .post .post_dolby {
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 6px;
+  right: 50px;
+  width: 64px;
+  height: 40px;
+  background-image: url("https://www.megabox.co.kr/static/pc/images/common/btn/mov_top_tag_db.png");
+  background-size: 50px;
+  background-position: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+}
+
+.poster .rap .post .post_mega {
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 6px;
+  right: 7px;
+  width: 34px;
+  height: 40px;
+  background-image: url("https://www.megabox.co.kr/static/pc/images/common/btn/mov_top_tag_mx.png");
+  background-size: 20px;
+  background-position: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+}
+
+
+
+.poster .rap .title {
+  width: 230px;
+  height: 27px;
+  /* border: 1px solid; */
+  margin-top: 10px;
+}
+
+.poster .rap .title .t12 {
+  width: 23px;
+  height: 23px;
+  display: inline-block;
+  background-image: url("https://img.megabox.co.kr/static/pc/images/common/txt/12_46x46.png");
+  background-size: cover;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.poster .rap .title .t15 {
+  width: 23px;
+  height: 23px;
+  display: inline-block;
+  background-image: url("https://img.megabox.co.kr/static/pc/images/common/txt/15_46x46.png");
+  background-size: cover;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.poster .rap .title .t18 {
+  width: 23px;
+  height: 23px;
+  display: inline-block;
+  background-image: url("https://img.megabox.co.kr/static/pc/images/common/txt/18_46x46.png");
+  background-size: cover;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.poster .rap .title .tall {
+  width: 23px;
+  height: 23px;
+  display: inline-block;
+  background-image: url("https://img.megabox.co.kr/static/pc/images/common/txt/ALL_46x46.png");
+  background-size: cover;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.poster .rap .title p {
+  display: inline-block;
+  font-size: 20px;
+  padding: 2px 0 0 1px;
+  margin: 0;
+  overflow: hidden;
+  font-weight: 400;
+  color: #444444;
+  text-overflow: ellipsis;
+  width: 200px;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+
+.poster .rap .date {
+  width: 230px;
+  height: 32px;
+  /* border: 1px solid; */
+  display: flex;
+  padding-top: 10px;
+  color: #444444;
+}
+
+.poster .rap .date p {
+  font-size: 15px;
+  margin: 0;
+}
+
+.poster .rap .date .date1::after {
+  content: '';
+  width: 1px;
+  height: 20px;
+  border: 1px solid #d8d9db;
+  margin: 0 6px;
+}
+
+.poster .rap .date .date2 {
+  margin-left: 3px;
+}
+
+
+.poster .rap .btn {
+  width: 230px;
+  height: 36px;
+  /* border: 1px solid; */
+  display: flex;
+  margin-top: 10px;
+}
+
+.poster .rap .btn > div {
+  width: 74px;
+  height: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  margin-right: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.poster .rap .btn .btn1 div {
+  width: 50%;
+  height: 100%;
+  /* border: 1px solid; */
+}
+
+.poster .rap .btn .btn1:hover {
+  background-color: #f2f4f8;
+  cursor: pointer;
+}
+
+.poster .rap .btn .btn1 .btn1_lt {
+  width: 18px;
+  height: 22px;
+  background: url(https://img.megabox.co.kr/static/pc/images/common/ico/ico-heart-toggle-gray.png);
+  background-size: 36px;
+  background-repeat: no-repeat;
+  margin: 5px 0 0 5px;
+}
+
+
+.poster .rap .btn .btn1 .btn1_rt p {
+  margin: 8px 0 0 5px
+}
+
+.poster .rap .btn .btn2 {
+  background-color: #503396;
+  color: white;
+  font-size: 15px;
+}
+
+.poster .rap .btn .btn2_2 {
+  width: 150px;
+  background-color: #503396;
+  color: white;
+  font-size: 15px;
+}
+
+.poster .rap .btn .btn2_3 {
+  width: 150px;
+  background-color: #666;
+  color: white;
+  font-size: 15px;
+}
+
+.poster .rap .btn .btn2:hover {
+  cursor: pointer;
+  background-color: #351f67;
+}
+
+.poster .rap .btn .btn2_2:hover {
+  cursor: pointer;
+  background-color: #351f67;
+}
+
+.poster .rap .btn .btn3 {
+  background-color: #503396;
+  /* color: white; */
+}
+
+.poster .rap .btn .btn3_div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+}
+
+
+.poster .rap .btn .btn3 .btn3_div_top {
+  display: flex;
+}
+
+.poster .rap .btn .btn3 .btn3_div_top .btn3_div_img {
+  width: 10px;
+  height: 10px;
+  /* border: 1px solid; */
+  background-color: white;
+  border-radius: 50%;
+  margin: 2px 1px 0 0;
+}
+
+.poster .rap .btn .btn3 .btn3_div_top p {
+  margin-left: 1px;
+  font-size: 14px;
+}
+
+.poster .rap .btn .btn3 .btn3_div p {
+  margin: 0;
+}
+
+.poster .rap .btn .btn3 .btn3_txt_d {
+  font-size: 10px;
+}
+
+
+.poster .rap .btn .btn3:hover {
+  cursor: pointer;
+  background-color: #351f67;
+}
+
+.poster .rap .btn .btn3 {
+  margin-right: 0px;
+}
+
